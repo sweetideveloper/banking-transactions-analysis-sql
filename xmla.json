@@ -1,0 +1,384 @@
+{
+  "name": "{{Dataset_Name}}",
+  "compatibilityLevel": 1606,
+  "model": {
+    "name": "{{Dataset_Name}}",
+    "culture": "en-US",
+    "collation": "Latin1_General_100_BIN2_UTF8",
+    "dataAccessOptions": {
+      "legacyRedirects": true,
+      "returnErrorValuesAsNull": true
+    },
+    "defaultPowerBIDataSourceVersion": "powerBI_V3",
+    "sourceQueryCulture": "en-US",
+    "tables": [
+      {
+        "name": "bank_transactions_data",
+        "sourceLineageTag": "[dbo].[bank_transactions_data]",
+        "columns": [
+          {
+            "name": "TransactionID",
+            "dataType": "string",
+            "sourceColumn": "TransactionID",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "TransactionID",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "AccountID",
+            "dataType": "string",
+            "sourceColumn": "AccountID",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "AccountID",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "TransactionAmount",
+            "dataType": "double",
+            "sourceColumn": "TransactionAmount",
+            "sourceProviderType": "float",
+            "sourceLineageTag": "TransactionAmount",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ]
+          },
+          {
+            "name": "TransactionDate",
+            "dataType": "dateTime",
+            "sourceColumn": "TransactionDate",
+            "formatString": "General Date",
+            "sourceProviderType": "datetime2",
+            "sourceLineageTag": "TransactionDate",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "TransactionType",
+            "dataType": "string",
+            "sourceColumn": "TransactionType",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "TransactionType",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "Location",
+            "dataType": "string",
+            "sourceColumn": "Location",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "Location",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "DeviceID",
+            "dataType": "string",
+            "sourceColumn": "DeviceID",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "DeviceID",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "IP Address",
+            "dataType": "string",
+            "sourceColumn": "IP Address",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "IP Address",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "MerchantID",
+            "dataType": "string",
+            "sourceColumn": "MerchantID",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "MerchantID",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "Channel",
+            "dataType": "string",
+            "sourceColumn": "Channel",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "Channel",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "CustomerAge",
+            "dataType": "int64",
+            "sourceColumn": "CustomerAge",
+            "formatString": "0",
+            "sourceProviderType": "bigint",
+            "sourceLineageTag": "CustomerAge",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "CustomerOccupation",
+            "dataType": "string",
+            "sourceColumn": "CustomerOccupation",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "CustomerOccupation",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "TransactionDuration",
+            "dataType": "int64",
+            "sourceColumn": "TransactionDuration",
+            "formatString": "0",
+            "sourceProviderType": "bigint",
+            "sourceLineageTag": "TransactionDuration",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "LoginAttempts",
+            "dataType": "int64",
+            "sourceColumn": "LoginAttempts",
+            "formatString": "0",
+            "sourceProviderType": "bigint",
+            "sourceLineageTag": "LoginAttempts",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "AccountBalance",
+            "dataType": "double",
+            "sourceColumn": "AccountBalance",
+            "sourceProviderType": "float",
+            "sourceLineageTag": "AccountBalance",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ]
+          },
+          {
+            "name": "PreviousTransactionDate",
+            "dataType": "dateTime",
+            "sourceColumn": "PreviousTransactionDate",
+            "formatString": "General Date",
+            "sourceProviderType": "datetime2",
+            "sourceLineageTag": "PreviousTransactionDate",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          }
+        ],
+        "partitions": [
+          {
+            "name": "{{Partition_Name}}",
+            "mode": "directLake",
+            "source": {
+              "type": "entity",
+              "entityName": "bank_transactions_data",
+              "expressionSource": "DatabaseQuery",
+              "schemaName": "dbo"
+            }
+          }
+        ],
+        "annotations": [
+          {
+            "name": "IsTableInBiModel",
+            "value": "False"
+          }
+        ]
+      },
+      {
+        "name": "vw_TransactionSummary",
+        "sourceLineageTag": "[dbo].[vw_TransactionSummary]",
+        "columns": [
+          {
+            "name": "AccountID",
+            "dataType": "string",
+            "sourceColumn": "AccountID",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "AccountID",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "TotalSpent",
+            "dataType": "double",
+            "sourceColumn": "TotalSpent",
+            "sourceProviderType": "float",
+            "sourceLineageTag": "TotalSpent",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ]
+          },
+          {
+            "name": "AverageSpent",
+            "dataType": "double",
+            "sourceColumn": "AverageSpent",
+            "sourceProviderType": "float",
+            "sourceLineageTag": "AverageSpent",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ]
+          },
+          {
+            "name": "TotalTransactions",
+            "dataType": "int64",
+            "sourceColumn": "TotalTransactions",
+            "formatString": "0",
+            "sourceProviderType": "int",
+            "sourceLineageTag": "TotalTransactions",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          }
+        ],
+        "partitions": [
+          {
+            "name": "{{Partition_Name}}",
+            "mode": "directLake",
+            "source": {
+              "type": "entity",
+              "entityName": "vw_TransactionSummary",
+              "expressionSource": "DatabaseQuery",
+              "schemaName": "dbo"
+            }
+          }
+        ],
+        "annotations": [
+          {
+            "name": "IsTableInBiModel",
+            "value": "False"
+          }
+        ]
+      }
+    ],
+    "expressions": [
+      {
+        "name": "DatabaseQuery",
+        "kind": "m",
+        "expression": "let\n    database = {{TDS_Endpoint}}\nin\n    database\n"
+      }
+    ],
+    "annotations": [
+      {
+        "name": "__PBI_TimeIntelligenceEnabled",
+        "value": "0"
+      },
+      {
+        "name": "SourceLineageTagType",
+        "value": "DatabaseFullyQualifiedName"
+      }
+    ]
+  }
+}
